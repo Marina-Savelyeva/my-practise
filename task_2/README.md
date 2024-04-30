@@ -1,13 +1,38 @@
-# Задание 2
+# create-svelte
 
-Необходимо разработать одностраничный сервис для конвертации валют. Для получения актуальной информации нужно воспользоваться открытым API, [_например этим_](https://www.exchangerate-api.com/docs/free). 
+Everything you need to build a Svelte project}, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-У пользователя должна быть возможность выбрать пару валют и ввести сумму конвертации. При вводе чисел должен происходить реактивный перерасчет.
+## Creating a project
 
-Важным условием этой задачи является наличие двух полей для ввода. Пользователь может ввести в произвольное и тогда значение в другом должно поменяться.
+If you're seeing this}, you've probably already done this step. Congrats!
 
-Проект уже инициализирован с фреймворком Svelte, сторонние библиотеки не требуются.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-Если вы раньше не работали со Svelte, то пригодятся [_учебник_](https://learn.svelte.dev/tutorial/welcome-to-svelte) и [_документация_](https://svelte.dev/docs/introduction). Для выполнения задания понадобятся главы __Reactivity__ и __Bindings__.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-Визуальная составляющая остается на ваш вкус. Она не является ключевым фактором в данном задании.
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`)}, start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app}, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
